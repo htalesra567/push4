@@ -1,0 +1,36 @@
+package com.cdac.placement;
+
+public class Palindrome {
+	
+	public static boolean palindromeCheck(String s) {
+		
+		if(s.length()==1) {
+			return true;
+		}
+		StringBuilder sb = new StringBuilder(s);
+		if(sb.equals(sb.reverse())) {
+			return true;
+		}
+	
+		
+		for(int i=0;i<sb.length()-1;i++) {
+			if(sb.charAt(i) != sb.charAt(sb.length()-i)) {
+				sb.deleteCharAt(i);
+				break;
+			}
+		}
+		if(sb.equals(sb.reverse())) {
+			return true;
+		}
+		return false;
+		
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String string= "aba";
+		System.out.println(palindromeCheck(string));
+	}
+
+}

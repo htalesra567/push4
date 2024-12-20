@@ -1,0 +1,29 @@
+package com.cdac.placement;
+
+public class Palindrome {
+	
+	public static boolean palindromeCheck(String s) {
+		
+		StringBuilder sb = new StringBuilder(s);
+
+		int n = sb.length()-1;
+		for(int i=0;i<sb.length();i++) {
+			if(sb.charAt(i) != sb.charAt(n-i)) {
+				sb.deleteCharAt(i);
+				break;
+			}
+		}
+		if(!sb.equals(sb.reverse())) {
+			return false;
+		}
+		return true;
+		
+		
+	}
+	public static void main(String[] args) {
+		
+		String string= "abbcda";
+		System.out.println(palindromeCheck(string));
+	}
+
+}

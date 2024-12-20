@@ -1,0 +1,34 @@
+package com.cdac.placement;
+
+import java.util.Arrays;
+
+public class ShiftCharacter {
+	
+	public static boolean shift(String s,String goal) {
+		
+		if(s.length() != goal.length()) {
+			return false;
+		}
+		
+		char[] arr1 = s.toCharArray();
+		char[] arr2 = goal.toCharArray();
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		
+		if(arr1.equals(arr2)) {
+			return true;
+		}
+		return false;
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s = "abcde";
+		String goal = "bcdea";
+		
+		System.out.println(shift(s, goal));
+			
+	}
+
+}

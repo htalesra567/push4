@@ -1,0 +1,43 @@
+package com.cdac.placement;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class NonRepeating {
+	
+	public static int NonRepeating(String s) {
+		
+//		Set<Character> set = new HashSet<Character>();
+//		
+//		for(int i=0;i<s.length();i++) {
+//			if(!set.contains(s.charAt(i))) {
+//				set.add(s.charAt(i));
+//			}
+//		}
+//		
+//		for(int i=0;i<set.size();i++) {
+//			if(set.contains(set))
+//		}
+//	}
+		int count =0;
+		for(int i=0;i<s.length();i++) {
+			count =0;
+			for(int j=0;j<s.length();j++) {
+				if(s.charAt(i) == s.charAt(j)) {
+					count++;
+				}
+			}
+			if(count ==1) {
+				return i;
+			}
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	String string = "leetcode";
+	System.out.println(NonRepeating(string));
+		
+	}
+
+}

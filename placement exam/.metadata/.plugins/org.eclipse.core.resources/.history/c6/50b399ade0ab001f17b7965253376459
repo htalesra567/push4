@@ -1,0 +1,28 @@
+package com.cdac.placement;
+
+public class Palindrome {
+	
+	public static boolean palindromeCheck(String s) {
+		
+		if(s.length()==1) {
+			return true;
+		}
+		StringBuilder sb = new StringBuilder(s);
+		
+		if(sb.equals(sb.reverse())) {
+			return true;
+		}
+		
+		for(int i=0;i<sb.length()-1;i++) {
+			if(sb.charAt(i) == sb.charAt(sb.length()-i)) {
+				
+			}
+		}
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

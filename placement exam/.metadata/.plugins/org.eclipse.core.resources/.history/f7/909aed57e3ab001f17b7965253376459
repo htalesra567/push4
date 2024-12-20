@@ -1,0 +1,17 @@
+package com.cdac.placement;
+
+import java.io.DataInputStream;
+import java.io.FileReader;
+import java.io.InputStream;
+
+public class File {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InputStream fr = new ("abc.txt");
+		DataInputStream dis = new DataInputStream(fr);
+			
+		
+	}
+
+}

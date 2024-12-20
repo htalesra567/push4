@@ -1,0 +1,11 @@
+package com.cdac.placement;
+
+public class HashsetImplementation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+}

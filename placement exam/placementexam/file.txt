@@ -1,0 +1,10 @@
+# This is line 1 of code
+print('Hello, World!')  # This is line 2
+x = 5  # This is line 3
+y = 10  # This is line 4
+sum = x + y  # This is line 5
+print(sum)  # This is line 6
+for i in range(5):  # This is line 7
+    print(i)  # This is line 8
+def greet():  # This is line 9
+    return 'Greetings!'  # This is line 10
